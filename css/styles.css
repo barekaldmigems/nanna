@@ -5,6 +5,7 @@
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 
 body {
+    background: #272727;
     margin: 0; /* Ingen kanter i siden af browser */
 }
 
@@ -34,25 +35,34 @@ img {
     max-width: 100%; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
-@font-face {
-    font-family: 'Bellarina';
-    src: url('./nanna/font/Bellarina.woff') format('woff');
-    font-style: normal;
-    font-weight: normal;
+.notmobil{
+    display: none;
 }
 
-@font-face {
-    font-family: 'mathlete';
-    src: url('./nanna/font/Mathlete-Bulky-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+.video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
-
-.p{
-    font-family: mathlete;
+.video iframe{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
 }
-.h1{
-    font-family: Bellarina;
+
+@media only screen and (min-width:700px){
+    .mobil{
+        display: none;
+    }
+    .notmobil{
+        display: inline;
+    }
+    .video iframe{
+        padding: 40px 60px;
+
+    }
 }
