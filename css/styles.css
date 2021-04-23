@@ -34,3 +34,25 @@ img {
     max-width: 100%; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
+@font-face {
+    font-family: 'Bellarina';
+    src: url('./nanna/font/Bellarina.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'mathlete';
+    src: url('./nanna/font/Mathlete-Bulky-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.p{
+    font-family: mathlete;
+}
+.h1{
+    font-family: Bellarina;
+}
