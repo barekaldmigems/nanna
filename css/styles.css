@@ -66,7 +66,65 @@ img {
     width: 40%;
     height: auto;
 }
+.gallery{
+    padding: 7% 0;
+}
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.footer {
+    flex: 1;    /* same as flex-grow: 1; */
+}
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+footer {
+    background-color: #3f5a44;
+    color: white;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+.ft-title {
+    color: #fff;
+    font-family: "Yu Gothic Light", serif;
+    font-size: 20px;
+    padding-bottom: 0.625rem;
+}
+.links{
+    list-style-type: none;
+    font-family: "Tw Cen MT",sans-serif;
+    font-size: 20px;
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px white solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    list-style-type: none;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
 
 @media only screen and (min-width:700px){
     .mobil{
